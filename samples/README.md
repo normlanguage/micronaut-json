@@ -1,0 +1,7 @@
+# micronaut-json sample ownership
+
+[English](README.md) | [简体中文](README.zh-CN.md)
+
+This module supplies JSON infrastructure for typed serialization. The runnable scenario is owned by [micronaut-serde-jackson](https://github.com/normlanguage/micronaut-serde-jackson/tree/main/samples) in its `samples/` directory; use that example to observe the behavior through the public API.
+
+The module identity and pinned dependencies are defined in [module.norm](../micronaut/json/module.norm).
