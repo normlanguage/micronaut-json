@@ -1,7 +1,9 @@
 Module module() {
   return module(
     name: "micronaut.json",
-    version: 3,
+    version: 4,
+    exports: ["JsonMapper"],
+    dependencies: [dependency(repository: "norm", name: "java.base", version: 1)],
     binding: jarBinding(
       target: mavenJar(
         group: "io.micronaut",
@@ -11,7 +13,7 @@ Module module() {
       ),
       api: [
         jarType(
-          name: "JsonMapper",
+          name: "io.micronaut.json.JsonMapper", alias: "JsonMapper",
           members: [],
           overloads: [
             jarOverload(name: "createDefault", parameterTypes: []),
